@@ -2,10 +2,10 @@
 pragma solidity ^0.8.6;
 import "@openzeppelin/contracts/token/ERC20/ERC20.sol";
 
-contract PolyToken is ERC20 {
+contract BetToken is ERC20 {
     address public owner;
 
-    constructor() ERC20("Poly Token", "POLY") {
+    constructor() ERC20("Bet Token", "BET") {
         owner = msg.sender;
         _mint(msg.sender, 100000 * 10**18);
     }
